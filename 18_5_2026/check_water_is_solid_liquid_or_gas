@@ -1,0 +1,9 @@
+puts "Enter your temperature \n"
+temp = gets.to_f
+if(temp<=0) 
+ puts "Solid"
+elsif(temp<100) 
+ puts "Liguid"
+else 
+ puts "Gas"
+end
