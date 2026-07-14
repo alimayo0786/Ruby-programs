@@ -11,15 +11,29 @@ class Car
 		@name
 	end
 
+	private
+
+	def print_car()
+		puts get_name()
+	end
+	public
+
+	def print_car2()
+		print_car()
+	end
+	def self.helo_test_klass_function
+		puts "ya klass function h"
+	end
 
 end
 
 
 honda_car = Car.new('honda')
-name = honda_car.get_name()
-puts name
+honda_car.print_car2
+#name = honda_car.get_name()
+#puts name
 
 
-honda_car.set_name('mehran')
-name = honda_car.get_name()
-puts name
+#honda_car.set_name('mehran')
+#name = honda_car.get_name()
+#puts name

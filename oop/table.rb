@@ -25,6 +25,17 @@ class Table
   def get_material()
     @material
   end
+  private
+  def print_table()
+    puts get_color
+    puts get_legs
+    puts get_material
+  end
+
+  public
+  def print_table2()
+    print_table
+  end
 end
 
 my_table = Table.new('Brown', '4', 'Wood')
@@ -32,3 +43,4 @@ my_table = Table.new('Brown', '4', 'Wood')
 puts "Table color: #{my_table.get_color}"
 puts "Table legs: #{my_table.get_legs}"
 puts "Table material: #{my_table.get_material}"
+my_table.print_table2()

@@ -25,10 +25,21 @@ class Chair
   def get_material()
     @material
   end
+  private
+  def print_chair()
+	puts get_color
+	puts get_legs
+	puts get_material
+  end
+  public
+  def print_chair2()
+	print_chair
+  end
 end
 
-my_chair = Chair.new('Black', '4', 'Wood')
+my_chair = Chair.new('Red', '4', 'Plastic')
 
 puts "Chair color: #{my_chair.get_color}"
 puts "Chair legs: #{my_chair.get_legs}"
 puts "Chair material: #{my_chair.get_material}"
+my_chair.print_chair2
