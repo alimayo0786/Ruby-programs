@@ -21,7 +21,7 @@ class Car
 	def print_car2()
 		print_car()
 	end
-	def self.helo_test_klass_function
+	def helo_test_klass_function
 		puts "ya klass function h"
 	end
 
@@ -30,6 +30,7 @@ end
 
 honda_car = Car.new('honda')
 honda_car.print_car2
+#Car.print_car2
 #name = honda_car.get_name()
 #puts name
 
