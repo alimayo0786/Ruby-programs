@@ -21,6 +21,9 @@ class Car
 	def print_car2()
 		print_car()
 	end
+	def car_tax()
+		puts "5000"
+	end		
 	def helo_test_klass_function
 		puts "ya klass function h"
 	end
