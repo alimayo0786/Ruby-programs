@@ -57,8 +57,7 @@ end
 
 
 class AliStudent < Students  
-	def initialize(name)
-		@myname = name
+	def initialize()
 		super('ali', '12', '15')
 	end
 	def my_fee(a)
@@ -68,6 +67,6 @@ class AliStudent < Students
 end
 
 
-student_1 = AliStudent.new('ali')
+student_1 = AliStudent.new()
 student_1.my_fee(1000)
-puts student_1.get_name
+#puts student_1.get_name
